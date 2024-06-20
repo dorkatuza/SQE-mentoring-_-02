@@ -15,7 +15,7 @@ describe('E2E tests to appointment planner', () => {
         await $("//button[text()='Save']").click();
 
         const emailError = await $("label#Email-info");
-        expect(await emailError.getText()).toEqual("Enter valid email12");
+        expect(await emailError.getText()).toEqual("Enter valid email");
         await $("//button[text()='Cancel']").click();
     });
 
