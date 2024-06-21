@@ -1,6 +1,9 @@
-export class SideMenuComponent {
-    get rootEl() {
-        return $('#plannerSiderBar');
+import { BaseComponent } from "./../common/base.component.js";
+
+export class SideMenuComponent extends BaseComponent {
+
+    constructor() {
+        super('#plannerSiderBar');
     }
 
     get name() {
